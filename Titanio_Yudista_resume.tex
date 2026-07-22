@@ -1,0 +1,219 @@
+% =====================================================================
+% ATS-FRIENDLY RESUME — Titanio Yudista
+% =====================================================================
+% Standard single-column, ATS-safe LaTeX resume template.
+% Clean typography, small-caps section headers, and precise vertical spacing.
+% =====================================================================
+
+\documentclass[10pt, letterpaper]{article}
+
+% ---------- Layout & Packages ----------
+\usepackage[top=0.22in, bottom=0.22in, left=0.4in, right=0.4in]{geometry}
+\usepackage{charter}              % Classical serif font, highly readable & ATS-safe
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}  % Clean hyperlinks without colored boxes
+\usepackage{ragged2e}
+\usepackage{microtype}             % Improved justification and line breaks
+\emergencystretch=1em
+\hfuzz=1pt                       % Ignore negligible overfull warnings under 1pt
+
+
+
+% ---------- Color Palette ----------
+\definecolor{navy}{RGB}{24, 43, 73}       % Professional Deep Navy
+\definecolor{textgray}{RGB}{40, 40, 40}    % Dark Slate for main text
+
+\pagestyle{empty}                 % No headers/footers for ATS compliance
+\setlength{\parindent}{0pt}
+\raggedbottom
+\RaggedRight
+
+% ---------- Section Heading Styling ----------
+\titleformat{\section}
+  {\large\bfseries\scshape\color{navy}}
+  {}{0em}{}
+  [\vspace{1.5pt}{\color{navy}\titlerule[0.8pt]}\vspace{1.5pt}]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+% ---------- Bullet List Styling ----------
+\setlist[itemize]{
+  noitemsep,
+  topsep=1pt,
+  parsep=0pt,
+  partopsep=0pt,
+  leftmargin=11pt,
+  label=\textbullet
+}
+
+% ---------- Helper Macros ----------
+\newcommand{\jobheader}[4]{%
+  \noindent\textbf{#1} \hfill \textbf{#2}\\[1pt]
+  \textit{#3} \hfill \textit{#4}\\[2pt]
+}
+
+\newcommand{\plainheader}[2]{%
+  \noindent\textbf{#1} \hfill \textbf{#2}\\[2pt]
+}
+
+\begin{document}
+
+% =====================================================================
+% HEADER
+% =====================================================================
+\begin{center}
+  {\Huge \bfseries \color{navy} Titanio Yudista}\\[4pt]
+  {\small \color{textgray}
+    +62\,851\,7428\,2998 \;\;$|$\;\;
+    \href{mailto:titanioyudista98@gmail.com}{titanioyudista98@gmail.com} \;\;$|$\;\;
+    \href{https://www.linkedin.com/in/titanio}{linkedin.com/in/titanio} \;\;$|$\;\;
+    \href{https://github.com/titan2903}{github.com/titan2903} \;\;$|$\;\;
+    South Jakarta, Indonesia
+  }
+\end{center}
+\vspace{-4pt}
+
+% =====================================================================
+% SUMMARY
+% =====================================================================
+\section{Summary}
+Backend Engineer with 5+ years building data-intensive systems (Go, Python, PostgreSQL, MongoDB) across IoT, ERP, and e-commerce platforms. Currently expanding into Data Science/ML through a B.S. in Data Science and applied projects in predictive data modeling, ETL pipelines, and cloud AI document extraction. Strongest in system architecture, CI/CD automation, and turning fragmented data flows into reliable production workflows.
+
+
+% =====================================================================
+% WORK EXPERIENCE
+% =====================================================================
+\section{Work Experience}
+
+\jobheader{PT Kreasi Indo Sejahtera}{Feb 2025 -- Apr 2026}{Software Technical Lead (Freelance)}{Depok, Indonesia}
+\begin{itemize}
+  \item Spearheaded technical strategy and backend architecture for an agritech/fintech livestock-trading platform, converting Business PRDs into technical specifications.
+  \item Designed relational PostgreSQL schemas and built core e-commerce modules (product, cart, order, payment) engineered for production reliability.
+  \item Automated CI/CD pipelines and cloud server infrastructure (Docker, GitLab CI), reducing deployment cycle time by 95\% and minimizing release errors.
+  \item Integrated real-time payment gateways and built an internal admin dashboard, boosting catalog management and order-processing efficiency by 90\%.
+  \item Enforced clean-code standards and peer code reviews to reduce technical debt, mentor engineering team members, and achieve a 98\% on-time delivery rate.
+\end{itemize}
+\vspace{2pt}
+
+\jobheader{PT. Kawan Solusi Teknologi}{May 2024 -- Mar 2025}{Backend Engineer}{Tangerang, Indonesia}
+\begin{itemize}
+  \item Designed optimized relational PostgreSQL schemas for the SIMPATI detainee-management system, improving query retrieval performance across core modules.
+  \item Engineered secure RESTful API modules in Python covering detainee/evidence transactions, reporting, file handling, user RBAC, and system configuration.
+  \item Implemented secure document and image storage using MinIO, structuring AI-extracted data payloads in MongoDB for rapid query retrieval.
+  \item Integrated RabbitMQ event-driven messaging with JSON payloads to interface backend services with internal AI document extraction pipelines.
+  \item Engineered automated n8n data aggregation workflows operating at 15-minute intervals to power near-real-time operational intelligence dashboards.
+  \item Orchestrated containerized application deployments using Docker and GitLab CI/CD across staging and production, maintaining high deployment standards.
+\end{itemize}
+\vspace{2pt}
+
+\jobheader{Evermos}{Oct 2022 -- Sep 2023}{Backend Engineer Support}{Bandung, Indonesia}
+\begin{itemize}
+  \item Developed core inventory and logistics service enhancements in Go and MySQL, optimizing warehouse operations and resource tracking efficiency.
+  \item Engineered automated 3PL financial reporting pipelines, cutting manual data compilation effort for finance and operations teams.
+  \item Designed interactive Metabase analytics dashboards and complex SQL queries for business leadership, while monitoring 99.9\% service health via Grafana.
+  \item Automated recurring n8n workflows for production order validation, database-to-Google Sheets sync, and real-time Slack failure alerts.
+\end{itemize}
+\vspace{2pt}
+
+\jobheader{Refactory}{Sep 2021 -- Sep 2022}{Middle Software Engineer}{Yogyakarta, Indonesia}
+\begin{itemize}
+  \item Engineered 5 mission-critical service modules (Blasting, Notification, Cron, Coal Stock, Geotech) for the OneKideco project using Go, PostgreSQL, Redis, and Swagger.
+  \item Developed a commerce module for Alva Auto (TypeScript, GraphQL, Vendure) enabling online motorcycle purchases with Midtrans payment gateway integration.
+  \item Architected real-time IoT motorbike telemetry services (Go, gRPC, Redis) and a headless CMS platform (NestJS, Strapi, PostgreSQL) supporting high-volume transaction loads.
+  \item Containerized and deployed 4 core microservices (User, Search, CMS, Rating) for Biofarma using Go, MySQL, and Elasticsearch.
+\end{itemize}
+\vspace{2pt}
+
+\jobheader{Evomo}{May 2021 -- Sep 2021}{Back-End Engineer}{Jakarta, Indonesia}
+\begin{itemize}
+  \item Spearheaded backend development for Industrial IoT platforms, building the Admin Center service (Node.js, Express, MongoDB) and Energy Management System (Go, Gin, InfluxDB).
+  \item Built the Overall Equipment Effectiveness (OEE) telemetry service for real-time factory equipment monitoring, authoring automated unit and integration test suites in Go and Node.js.
+\end{itemize}
+\vspace{2pt}
+
+\jobheader{PRIEDS Technology}{Aug 2020 -- Apr 2021}{Software Engineer}{Tangerang, Indonesia}
+\begin{itemize}
+  \item Implemented automated end-to-end testing frameworks using Selenium, cutting manual testing time by 80\% and accelerating release cycles.
+  \item Contributed to full-stack ERP module development (AngularJS, custom REST APIs) and authored comprehensive technical architecture documentation for internal engineering teams.
+\end{itemize}
+
+% =====================================================================
+% PROJECTS
+% =====================================================================
+\section{Projects}
+
+\plainheader{ID/X Partners: Retail Data Warehouse \& ETL Pipeline}{2026}
+\begin{itemize}
+  \item Designed an end-to-end Data Warehouse using Star Schema architecture, consolidating multi-source transactional data from Microsoft SQL Server, Excel, and CSV files.
+  \item Orchestrated automated ETL DAG workflows in Apache Airflow, implementing data quality validation checks and stored procedures for analytical reporting.
+  \item Repo: \href{https://github.com/titan2903/idxpartners-de-challenge}{github.com/titan2903/idxpartners-de-challenge}
+\end{itemize}
+\vspace{2pt}
+
+\plainheader{IoT Gas Leak \& Fire Early Warning System (Samsung Innovation Campus Batch 7)}{2025}
+\begin{itemize}
+  \item Engineered an integrated IoT safety monitoring system using ESP32 microcontrollers, MQ-2/MQ-5 gas sensors, and MQTT protocol for real-time hazard detection.
+  \item Ingested sensor telemetry into InfluxDB time-series database, paired with a real-time Python monitoring dashboard and instant Telegram alert bot.
+  \item Repo: \href{https://github.com/titan2903/final-project-stage-2}{github.com/titan2903/final-project-stage-2}
+\end{itemize}
+\vspace{2pt}
+
+\plainheader{Automated Document AI Extraction Pipeline (GCP \& Gemini)}{2026}
+\begin{itemize}
+  \item Architected a serverless document parsing pipeline on Google Cloud Platform (GCP) integrating Gemini AI models for automated data extraction from unstructured files.
+  \item Built event-driven Cloud Functions and containerized microservices to process high-volume document feeds into structured storage.
+  \item Repo: \href{https://github.com/titan2903/gcp-document-pipeline}{github.com/titan2903/gcp-document-pipeline}
+\end{itemize}
+\vspace{2pt}
+% =====================================================================
+% EDUCATION
+% =====================================================================
+\section{Education}
+\plainheader{Cakrawala University -- Jakarta, Indonesia}{Sep 2024 -- Aug 2028 (Expected)}
+Bachelor of Data Science, GPA 3.95/4.00
+
+% =====================================================================
+% ORGANISATIONAL EXPERIENCE
+% =====================================================================
+\section{Organisational Experience}
+
+\plainheader{Student Government Association (SGA), Cakrawala University}{Jan 2025 -- Jan 2026}
+\textit{Head of Research \& Technology Division}
+\begin{itemize}
+  \item Led the Research \& Technology Division to recognition as Best Division within the university's SGA for the 2025--2026 term.
+  \item Directed multiple cross-functional research/tech projects with 100\% on-time delivery, including an industry-academia collaboration app that reached 500+ downloads on Google Play.
+  \item Organized a university-wide UI/UX design competition and served as strategic liaison in executive-level meetings.
+\end{itemize}
+\vspace{2pt}
+
+\plainheader{UKM Robotic, Cakrawala University}{Dec 2025 -- Present}
+\textit{Head of Research \& Technology Department}
+\begin{itemize}
+  \item Leading applied robotics R\&D initiatives spanning IoT, Machine Learning, and Computer Vision.
+  \item Directed 5+ engineering student members in developing ROS-based (Robot Operating System) navigation algorithms and hardware sensor integration.
+\end{itemize}
+
+% =====================================================================
+% SKILLS & CERTIFICATIONS
+% =====================================================================
+\section{Skills \& Certifications}
+\begin{description}[leftmargin=0pt, labelindent=0pt, itemsep=2pt, font=\normalfont\bfseries]
+  \item[Languages/Frameworks:] Go, Python, TypeScript, JavaScript, GraphQL, REST, RPC/gRPC
+  \item[Data \& Infrastructure:] SQL, NoSQL, PostgreSQL, MongoDB, Data Engineering, Data Visualization, Machine Learning
+  \item[DevOps/Cloud:] Docker, Kubernetes, Terraform, Terragrunt, GCP, GitHub Actions, GitLab CI, FluxCD, CI/CD, Linux, Nginx
+  \item[Certifications:] 
+    \href{https://drive.google.com/file/d/13RXYkHFZOkcxAmRPy6xDM4uKSyYjOBjt/view?usp=sharing}{DataCamp Certified Data Engineer}, 
+    \href{https://drive.google.com/file/d/1oTBKtkKMDfmZMUT6OfxY7nCxo-HXPWsB/view?usp=sharing}{Certified Practical DevOps Engineer (Studi DevSecOps)}, 
+    \href{https://drive.google.com/file/d/1ZYyVEw6GQiVqOQWF0Txe64ZL93UxtNsL/view?usp=sharing}{Machine Learning Specialization (DeepLearning.AI \& Stanford)}
+
+  \item[Programs \& Honors:] 
+    \href{https://drive.google.com/file/d/1s4V87i5-iB2wDlvNcF7B1GG7XkjlLzvU/view?usp=sharing}{Best Student -- 4-Month DevOps Bootcamp (Studi DevSecOps)}, 
+    \href{https://drive.google.com/file/d/15lNJFIuzA9-thkw_orxTpsRYP3eDU6z3/view?usp=sharing}{Data Engineer Project-Based Internship (ID/X Partners)}, 
+    \href{https://drive.google.com/file/d/1PQyzIseiESJi6cpa5ZrQ2G4nMWdLlNlv/view?usp=sharing}{Samsung Innovation Campus Batch 7 -- Stage 2 IoT}
+\end{description}
+
+
+\end{document}
