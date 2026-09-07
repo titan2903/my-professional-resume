@@ -99,7 +99,7 @@ rm -f *.aux *.log *.out *.fls *.fdb_latexmk *.synctex.gz
 ## 📬 Contact & Links
 
 - **Email**: [titanioyudista98@gmail.com](mailto:titanioyudista98@gmail.com)
-- **Phone**: [+62 851 7428 2998](https://wa.me/6285174282998)
+- **Phone**: [+6285174282998](https://wa.me/6285174282998)
 - **LinkedIn**: [linkedin.com/in/titanio](https://www.linkedin.com/in/titanio)
 - **GitHub**: [github.com/titan2903](https://github.com/titan2903)
 - **Linktree**: [titanlinktree.netlify.app](https://titanlinktree.netlify.app)
