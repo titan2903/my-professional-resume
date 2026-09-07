@@ -8,7 +8,7 @@
 \documentclass[10pt, letterpaper]{article}
 
 % ---------- Layout & Packages ----------
-\usepackage[top=0.22in, bottom=0.22in, left=0.4in, right=0.4in]{geometry}
+\usepackage[top=0.20in, bottom=0.20in, left=0.4in, right=0.4in]{geometry}
 \usepackage{charter}              % Classical serif font, highly readable & ATS-safe
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -36,13 +36,13 @@
 \titleformat{\section}
   {\large\bfseries\scshape\color{navy}}
   {}{0em}{}
-  [\vspace{1.5pt}{\color{navy}\titlerule[0.8pt]}\vspace{1.5pt}]
-\titlespacing*{\section}{0pt}{4pt}{2pt}
+  [\vspace{1pt}{\color{navy}\titlerule[0.8pt]}\vspace{1pt}]
+\titlespacing*{\section}{0pt}{3.5pt}{1.5pt}
 
 % ---------- Bullet List Styling ----------
 \setlist[itemize]{
   noitemsep,
-  topsep=1pt,
+  topsep=0.5pt,
   parsep=0pt,
   partopsep=0pt,
   leftmargin=11pt,
@@ -52,11 +52,11 @@
 % ---------- Helper Macros ----------
 \newcommand{\jobheader}[4]{%
   \noindent\textbf{#1} \hfill \textbf{#2}\\[1pt]
-  \textit{#3} \hfill \textit{#4}\\[2pt]
+  \textit{#3} \hfill \textit{#4}\\[1.5pt]
 }
 
 \newcommand{\plainheader}[2]{%
-  \noindent\textbf{#1} \hfill \textbf{#2}\\[2pt]
+  \noindent\textbf{#1} \hfill \textbf{#2}\\[1.5pt]
 }
 
 \begin{document}
@@ -89,6 +89,14 @@ Backend Engineer with 5+ years building production-grade systems (Go, Python, Po
 % =====================================================================
 \section{Work Experience}
 
+\jobheader{Azura Labs}{Aug 2026 -- Oct 2026}{Software Engineer (Contract)}{Remote, Indonesia}
+\begin{itemize}
+  \item Engineered end-to-end features across backend APIs and the admin dashboard, delivering Call Plan scheduling, Product Master Data management, and Data Warehouse (DWH) pipelines to streamline operations.
+  \item Designed and optimized SQL database views and complex analytical queries, decoupling reporting logic from transaction tables and significantly accelerating dashboard performance.
+  \item Diagnosed and resolved critical full-stack bugs across backend services and frontend admin interfaces, improving system reliability, UI responsiveness, and data integrity.
+\end{itemize}
+\vspace{2pt}
+
 \jobheader{PT Kreasi Indo Sejahtera}{Feb 2025 -- Apr 2026}{Software Technical Lead (Freelance)}{Depok, Indonesia}
 \begin{itemize}
   \item Spearheaded technical strategy and backend architecture for an agritech/fintech livestock-trading platform, converting Business PRDs into technical specifications.
@@ -120,6 +128,7 @@ Backend Engineer with 5+ years building production-grade systems (Go, Python, Po
 \end{itemize}
 \vspace{2pt}
 
+\newpage
 \jobheader{Refactory}{Sep 2021 -- Sep 2022}{Middle Software Engineer}{Yogyakarta, Indonesia}
 \begin{itemize}
   \item Engineered 5 mission-critical service modules (Blasting, Notification, Cron, Coal Stock, Geotech) for the OneKideco project using Go, PostgreSQL, Redis, and Swagger.
@@ -195,7 +204,7 @@ Bachelor of Data Science, GPA 3.95/4.00
 % SKILLS & CERTIFICATIONS
 % =====================================================================
 \section{Skills \& Certifications}
-\begin{description}[leftmargin=0pt, labelindent=0pt, itemsep=2pt, font=\normalfont\bfseries]
+\begin{description}[leftmargin=0pt, labelindent=0pt, itemsep=0.5pt, parsep=0pt, font=\normalfont\bfseries]
   \item[Languages/Frameworks:] Go, Python, TypeScript, JavaScript, Node.js (Express, NestJS), Gin, AngularJS, GraphQL, gRPC
   \item[Data \& Infrastructure:] PostgreSQL, MongoDB, MySQL, Redis, Elasticsearch, RabbitMQ, Apache Airflow, Machine Learning
   \item[DevOps, Cloud \& Tools:] Docker, Kubernetes, Terraform, GCP, GitHub Actions, GitLab CI, Grafana, n8n, Linux, Nginx
@@ -203,7 +212,6 @@ Bachelor of Data Science, GPA 3.95/4.00
     \href{https://drive.google.com/file/d/13RXYkHFZOkcxAmRPy6xDM4uKSyYjOBjt/view?usp=sharing}{DataCamp Certified Data Engineer}, 
     \href{https://drive.google.com/file/d/1oTBKtkKMDfmZMUT6OfxY7nCxo-HXPWsB/view?usp=sharing}{Certified Practical DevOps Engineer (Studi DevSecOps)}, 
     \href{https://drive.google.com/file/d/1ZYyVEw6GQiVqOQWF0Txe64ZL93UxtNsL/view?usp=sharing}{Machine Learning Specialization (DeepLearning.AI \& Stanford)}
-
   \item[Programs \& Honors:] 
     \href{https://drive.google.com/file/d/1s4V87i5-iB2wDlvNcF7B1GG7XkjlLzvU/view?usp=sharing}{Best Student -- 4-Month DevOps Bootcamp (Studi DevSecOps)}, 
     \href{https://drive.google.com/file/d/15lNJFIuzA9-thkw_orxTpsRYP3eDU6z3/view?usp=sharing}{Data Engineer Project-Based Internship (ID/X Partners)}, 
